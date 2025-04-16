@@ -1,7 +1,6 @@
 // если вы хотите использовать sass-переменные - удалите root
 // colors
 :root {
-  // base
   --font-family: "Geometria", sans-serif;
   --content-width: 1440px;
   --container-offset: 16px;
@@ -9,5 +8,8 @@
 
   // colors
   --blue-color: #4351d8;
+  --blue-dark-color: #3845c6;
+  --grey-color: #3e425b;
+  --black-color: #040606;
   --white-color: #fff;
 }

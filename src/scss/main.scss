@@ -5,4 +5,6 @@
 @use "settings";
 
 // подключения компонентов страницы
-@use "./components/header";
+@use "./components/pages/contacts";
+@use "./components/elements/head-page";
+@use "./components/elements/title-section"

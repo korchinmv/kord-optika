@@ -1,0 +1,123 @@
+.contacts {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (width <=1024px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__info-left {
+    margin-right: 20px;
+    flex-shrink: 0;
+
+    @media screen and (width <=1024px) {
+      margin-right: 0;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+
+    @media screen and (width <=1024px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list-item,
+  &__list-phones-item,
+  &__list-item-link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__list-item-link {
+    transition: color 0.3s;
+
+    @media screen and (width <=1024px) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: var(--blue-dark-color);
+    }
+  }
+
+  &__list-item {
+    @media screen and (width <=1024px) {
+      font-size: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__list-icon {
+    width: 24px;
+    align-self: flex-start;
+  }
+
+
+  &__subtitle-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 2px;
+  }
+
+  &__list-phones-item {
+    @media screen and (width <=1024px) {
+      font-size: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+
+      @media screen and (width <=1024px) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__list-phones {
+    margin-bottom: 16px;
+  }
+
+
+  &__list-phones-link {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #4351d8;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    transition: color 0.3s;
+
+    @media screen and (width <=1024px) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: var(--blue-dark-color);
+    }
+  }
+
+  &__info-img {
+    border-radius: 16px;
+    max-width: 690px;
+    width: 100%;
+
+    @media screen and (width <=1024px) {
+      max-width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+}
