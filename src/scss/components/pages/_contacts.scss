@@ -2,9 +2,11 @@
   &__info {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 
     @media screen and (width <=1024px) {
       flex-direction: column-reverse;
+      margin-bottom: 48px;
     }
   }
 
@@ -118,6 +120,30 @@
     @media screen and (width <=1024px) {
       max-width: 100%;
       margin-bottom: 24px;
+    }
+  }
+
+  &__requisites {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__salons {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 67px;
+    }
+  }
+
+  &__seo-block {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 48px;
     }
   }
 }

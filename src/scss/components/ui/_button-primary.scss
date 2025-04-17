@@ -1,0 +1,15 @@
+.button-primary {
+  border-radius: 80px;
+  padding: 10px 32px;
+  background: linear-gradient(90deg, #4351d8 0%, #6d7bff 100%);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--white-color);
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

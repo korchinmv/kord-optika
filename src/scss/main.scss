@@ -7,4 +7,11 @@
 // подключения компонентов страницы
 @use "./components/pages/contacts";
 @use "./components/elements/head-page";
-@use "./components/elements/title-section"
+@use "./components/elements/text-block";
+@use "./components/elements/title-section";
+
+@use "./components/sections/requisites";
+@use "./components/sections/salons";
+@use "./components/sections/seo-block";
+
+@use "./components/ui/button-primary";

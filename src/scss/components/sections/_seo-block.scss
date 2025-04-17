@@ -1,0 +1,54 @@
+.seo-block {
+  &__title {
+    margin-bottom: 40px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__btn-icon {
+    transition: all 0.3s;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    position: relative;
+    z-index: 3;
+
+    &--active {
+      .seo-block__btn-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__btn-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--blue-color);
+  }
+
+
+  &__text-hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+
+    &.visible {
+      max-height: 1000px;
+      overflow: visible;
+      opacity: 1;
+    }
+  }
+}

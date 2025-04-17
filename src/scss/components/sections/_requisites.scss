@@ -1,0 +1,48 @@
+.requisites {
+  background-color: var(--bg-light);
+  padding: 40px;
+  border-radius: 16px;
+
+  @media screen and (width <=768px) {
+    padding: 24px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @media screen and (width <=768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+
+    @media screen and (width <=1024px) {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__info {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+
+    @media screen and (width <=1024px) {
+      font-size: 16px;
+    }
+  }
+
+  &__salons {}
+}
