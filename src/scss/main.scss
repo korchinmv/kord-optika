@@ -6,7 +6,9 @@
 
 // подключения компонентов страницы
 @use "./components/pages/contacts";
-@use "./components/elements/head-page";
+@use "./components/pages/about";
+
+@use "./components/elements/page-title";
 @use "./components/elements/text-block";
 @use "./components/elements/title-section";
 

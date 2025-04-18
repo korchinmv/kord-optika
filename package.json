@@ -9,7 +9,7 @@
     "style-fix": "npx stylelint **/*.scss --fix",
     "code": "editorconfig-checker",
     "dev": "gulp",
-    "build": "build --build",
+    "build": "gulp build --build",
     "cache": "gulp cache",
     "backend": "gulp backend",
     "zip": "gulp zip --build"
