@@ -1,0 +1,45 @@
+.custom-checkbox {
+
+  /* создание в label псевдоэлемента before со следующими стилями */
+  &__span::before {
+    content: '';
+    display: inline-block;
+    border: 1px solid var(--white-color);
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--white-color);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  /* стили для чекбокса, находящегося в состоянии checked */
+  &>input:checked+span::before {
+    background-image: url('../img/svg/icon-checkbox.svg');
+    background-color: var(--white-color);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /* стили при наведении курсора на checkbox */
+  &>input:not(:disabled, :checked)+span:hover::before {
+    border-color: var(--blue-color);
+  }
+
+  /* стили для активного чекбокса (при нажатии на него) */
+  &>input:not(:disabled):active+span::before {
+    border-color: var(--blue-color);
+    // background-color: var(--green-dark-color);
+  }
+
+  /* стили для чекбокса, находящегося в фокусе */
+  // & > input:focus + span::before {
+  //   box-shadow: 0 0 0 0.2rem rgba(153, 242, 164, 0.25);
+  // }
+
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  // & > input:focus:not(:checked) + span::before {
+  //   border-color: var(--accent-color);
+  // }
+}

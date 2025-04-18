@@ -123,14 +123,6 @@
     }
   }
 
-  &__requisites {
-    margin-bottom: 80px;
-
-    @media screen and (width <=768px) {
-      margin-bottom: 48px;
-    }
-  }
-
   &__salons {
     margin-bottom: 80px;
 
@@ -139,7 +131,9 @@
     }
   }
 
-  &__seo-block {
+  &__seo-block,
+  &__form,
+  &__requisites {
     margin-bottom: 80px;
 
     @media screen and (width <=768px) {

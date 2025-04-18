@@ -228,6 +228,67 @@
           </div>
         </div>
 
+        <div class="contacts__form form-section">
+          <h3 class="form-section__title title-section">Мы открыты к предложениям</h3>
+
+          <p class="form-section__text">Если у вас есть предложение по сотрудничеству
+            или по работе сайта, напишите нам!</p>
+
+          <form class="form-section__form form" action="#">
+            <div class="form__box">
+              <div class="form__custom-select custom-select">
+                <div class="custom-select__header" tabindex="0">
+                  <span class="custom-select__current">Категория обращения</span>
+                  <svg class="custom-select__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.8 5.6001L7.99995 10.4001L3.19995 5.6001" stroke="#3E425B" stroke-opacity="0.6"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+
+                <select class="custom-select__select" id="sort-select" name="sort-select">
+                  <option class="custom-select__option" selected="selected" value="0">Категория обращения</option>
+                  <option class="custom-select__option" value="1">Категория1</option>
+                  <option class="custom-select__option" value="2">Категория2</option>
+                  <option class="custom-select__option" value="3">Категория3</option>
+                </select>
+
+                <div class="custom-select__dropdown">
+                  <ul class="custom-select__list">
+                    <li class="custom-select__item" data-value="0">Категория обращения</li>
+                    <li class="custom-select__item" data-value="1">Категория1</li>
+                    <li class="custom-select__item" data-value="2">Категория2</li>
+                    <li class="custom-select__item" data-value="3">Категория3</li>
+                  </ul>
+                </div>
+              </div>
+
+              <input class="form__input" type="text" placeholder="Ваше имя">
+            </div>
+            <div class="form__box">
+              <input class="form__input" type="text" placeholder="Ваш email">
+              <input class="form__input" type="text" placeholder="Номер телефона">
+            </div>
+
+            <textarea class="form__textarea" name="textarea" id="textarea" placeholder="Комментарий"></textarea>
+
+            <div class="form__checkbox-wrapper">
+              <label class="form__checkbox custom-checkbox">
+                <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                  data-validate-field="checkbox">
+
+                <span class="custom-checkbox__span"></span>
+              </label>
+              <span class="form__checkbox-text">Я даю согласие на <a class="form__checkbox-text-link" href="#">обработку
+                  персональных данных</a></span>
+            </div>
+
+            <div class="form__recaptcha g-recaptcha" data-sitekey="6LfPeLsUAAAAAPcqxOvGecqStpF7hxfGNLtMQqD8"></div>
+
+            <button class="form__btn">Отправить</button>
+          </form>
+        </div>
+
         <div class="contacts__seo-block seo-block">
           <h3 class="seo-block__title title-section">Заголовок SEO текста</h3>
 
