@@ -81,6 +81,12 @@ button {
   max-width: var(--container-width);
 }
 
+.container-large {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: 1600px;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;

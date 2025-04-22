@@ -7,9 +7,9 @@
   line-height: 1.2;
   text-align: center;
   color: var(--white-color);
-  transition: opacity 0.3s;
+  transition: all 0.3s;
 
   &:hover {
-    opacity: 0.8;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(90deg, #4351d8, #6d7bff);
   }
 }

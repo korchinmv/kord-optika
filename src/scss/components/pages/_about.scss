@@ -133,6 +133,23 @@
     }
   }
 
+  &__img-wrapper {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__img-bg {
+    height: 400px;
+    border-radius: 10px;
+
+    @media screen and (width <=768px) {
+      height: 160px;
+    }
+  }
+
   &__text-bold {
     font-weight: 700;
     font-size: 24px;
@@ -159,6 +176,22 @@
     @media screen and (width <=768px) {
       font-size: 16px;
       max-width: 100%;
+    }
+  }
+
+  &__info-buy {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__salons {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 134px;
     }
   }
 }

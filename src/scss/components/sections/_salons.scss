@@ -174,7 +174,6 @@
     position: absolute;
     bottom: -15px;
 
-
     @media screen and (width <=768px) {
       position: relative;
       z-index: 3;
@@ -186,7 +185,6 @@
   &__img {
     border-radius: 16px;
     max-width: 690px;
-    height: 450px;
 
     @media screen and (width <=1200px) {
       max-width: 100%;
