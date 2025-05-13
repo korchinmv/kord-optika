@@ -14,11 +14,15 @@
 
 @use "./components/sections/requisites";
 @use "./components/sections/salons";
+@use "./components/sections/team";
+@use "./components/sections/carier-block";
 @use "./components/sections/form-section";
 @use "./components/sections/seo-block";
 @use "./components/sections/info-buy";
+@use "./components/sections/news-tabs";
 
 @use "./components/ui/button-primary";
 @use "./components/ui/custom-select";
 @use "./components/ui/custom-checkbox";
 @use "./components/ui/form";
+@use "./components/ui/tabs";

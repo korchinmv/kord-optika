@@ -194,4 +194,49 @@
       margin-bottom: 134px;
     }
   }
+
+  &__team {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__carier {
+    margin-bottom: 100px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 48px;
+    }
+  }
+
+
+  &__seo-block {
+    margin-bottom: 80px;
+
+    @media screen and (width <=768px) {
+      display: none;
+    }
+  }
+
+  &__news-tabs {
+    margin-bottom: 100px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__news-tabs-wrapper {
+    padding: 80px 0 100px;
+    border-top: 1px solid rgba(62, 66, 91, 0.2);
+    border-bottom: 1px solid rgba(62, 66, 91, 0.2);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tabs-head {
+    margin-bottom: 40px;
+  }
 }
