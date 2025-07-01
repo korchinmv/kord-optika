@@ -1,0 +1,56 @@
+.blog {
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__filter {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  &__filter-item {}
+
+  &__filter-btn {
+    padding: 12px 32px;
+    border-radius: 40px;
+    border: 1px solid var(--blue-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--blue-color);
+
+    &--active {
+      background-color: var(--blue-color);
+      color: var(--white-color);
+      transition: all ease 0.2s;
+
+      &:hover {
+        background-color: var(--blue-dark-color);
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__list-item {}
+
+  &__info-card {}
+
+  &__pagination {}
+
+  &__subscribe {}
+
+  &__form-title {}
+
+  &__form {}
+
+  &__form-input {}
+
+  &__form-btn {}
+}

@@ -1,0 +1,125 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    background-color: var(--grey-light-bg-color);
+    color: var(--grey-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--grey-color);
+    width: 40px;
+    height: 40px;
+    transition:
+      background-color ease 0.3s,
+      border-color ease 0.3s,
+      color ease 0.3s;
+
+    &:first-child,
+    &:last-child {
+      width: 73px;
+
+      @media screen and (width <=990px) {
+        width: 50px;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    &:hover {
+      color: var(--white-color);
+      background-color: var(--blue-color);
+      border-color: var(--blue-color);
+
+      .pagination__arrows {
+        svg {
+          path {
+            stroke: var(--accent-color);
+          }
+        }
+      }
+    }
+
+    svg {
+      path {
+        transition: all 0.3s;
+      }
+    }
+
+    &--active {
+      background-color: var(--blue-color);
+      color: var(--white-color);
+      border-color: var(--blue-color);
+
+      &:hover {
+        color: var(--blue-dark-color);
+      }
+    }
+
+    &--disabled {
+      .pagination__arrows {
+        pointer-events: none;
+
+        svg {
+          path {
+            stroke: var(--black-color);
+            opacity: 0.3;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: var(--grey-light-bg-color);
+
+        .pagination__arrows {
+          svg {
+            path {
+              stroke: var(--black-color);
+            }
+          }
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    @media screen and (width <=768px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link,
+  &__arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__arrows {
+    svg {
+      path {
+        stroke: var(--black-color);
+      }
+    }
+  }
+
+  &__prev {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.info-card {
+  border-radius: 16px;
+  position: relative;
+  background-color: var(--white-color);
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  width: 100%;
+
+  &__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px 17px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 35px;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border-radius: 16px 0 16px 0;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+
+  &__content {
+    padding: 24px;
+
+    @media screen and (width <=768px) {
+      padding: 16px;
+    }
+  }
+
+  &__title-link {
+    margin-bottom: 16px;
+    transition: all 0.3s;
+    display: block;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 8px;
+    }
+
+    &:hover {
+      color: var(--blue-color);
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 20px;
+
+    @media screen and (width <=768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* Ограничиваем текст 4 строками */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Добавляем многоточие */
+
+    @media screen and (width <=768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--blue-color);
+    padding-right: 24px;
+
+
+    &:hover {
+      color: var(--blue-dark-color);
+    }
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      display: block;
+      width: 8px;
+      height: 1px;
+      background-color: var(--blue-color);
+      border-radius: 3px;
+      top: 45%;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      display: block;
+      width: 8px;
+      height: 1px;
+      background-color: var(--blue-color);
+      border-radius: 3px;
+      top: 60%;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__tag {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--blue-color);
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  &__author-avatar {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: var(--bg-light);
+
+    img {
+      display: none;
+    }
+  }
+
+  &__author-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33333;
+    color: var(--blue-color);
+  }
+}

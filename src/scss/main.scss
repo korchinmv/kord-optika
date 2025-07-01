@@ -7,10 +7,13 @@
 // подключения компонентов страницы
 @use "./components/pages/contacts";
 @use "./components/pages/about";
+@use "./components/pages/blog";
 
 @use "./components/elements/page-title";
 @use "./components/elements/text-block";
 @use "./components/elements/title-section";
+
+@use "./components/cards/info-card";
 
 @use "./components/sections/requisites";
 @use "./components/sections/salons";
@@ -26,3 +29,5 @@
 @use "./components/ui/custom-checkbox";
 @use "./components/ui/form";
 @use "./components/ui/tabs";
+@use "./components/ui/pagination";
+@use "./components/ui/slider-pagination";

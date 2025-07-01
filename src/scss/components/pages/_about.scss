@@ -236,7 +236,31 @@
     flex-direction: column;
   }
 
-  &__tabs-head {
+  &__slider {
     margin-bottom: 40px;
+    border-radius: 16px;
+
+    &.swiper {
+      overflow: visible;
+    }
+  }
+
+  &__slider-item {
+    border-radius: 16px;
+  }
+
+  &__slider-list {
+    @media screen and (width <=990px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__slider-pagination {
+    position: relative;
+    display: none !important;
+
+    @media screen and (width <=990px) {
+      display: flex !important;
+    }
   }
 }
