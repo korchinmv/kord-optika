@@ -7,23 +7,49 @@
   <main class="main">
     <section class="blog">
       <div class="container">
-        <h1 class="blog__title page-title">Блог</h1>
 
-        <div class="blog__filter-category filter-category">
-          <ul class="filter-category__nav">
-            <li class="filter-category__filter-item">
-              <button class="filter-category__filter-btn filter-category__filter-btn--active">Все</button>
-            </li>
-            <li class="filter-category__filter-item">
-              <button class="filter-category__filter-btn">#Оптика</button>
-            </li>
-            <li class="filter-category__filter-item">
-              <button class="filter-category__filter-btn">#Линзы</button>
-            </li>
-            <li class="filter-category__filter-item">
-              <button class="filter-category__filter-btn">#Зрение</button>
-            </li>
-          </ul>
+        <div class="blog__author-block author-block">
+          <div class="author-block__left">
+            <h1 class="author-block__title">Иванов Иван Иванович</h1>
+
+            <span class="author-block__position">Директор</span>
+
+            <p class="author-block__text">Пишу о спорте и фитнесе. КМС по тяжелой атлетике, выступающий атлет по
+              функциональному многоборью, фанат йоги и бега. Зарываюсь в научные исследования и мета-анализы.</p>
+
+            <div class="author-block__tabs-head">
+
+
+              <ul class="author-block__nav">
+                <li class="author-block__nav-item tabs__nav-item--active" data-target="1">
+                  <button class="author-block__nav-btn">Статьи (<span>21</span>)</button>
+                </li>
+                <li class="author-block__nav-item" data-target="2">
+                  <button class="author-block__nav-btn">Об авторе</button>
+                </li>
+              </ul>
+
+
+            </div>
+          </div>
+
+          <div class="author-block__right">
+            <img class="author-block__img" src="img/author.jpg" alt="Иванов Иван Иванович">
+
+            <ul class="author-block__social">
+              <li class="author-block__social-item">
+                <a class="author-block__social-link" href="#" target="_blank">
+                  <img class="author-block__social-img" src="img/social/tg.svg" alt="Telegram">
+                </a>
+                <a class="author-block__social-link" href="#" target="_blank">
+                  <img class="author-block__social-img" src="img/social/vk.svg" alt="Vk">
+                </a>
+                <a class="author-block__social-link" href="#" target="_blank">
+                  <img class="author-block__social-img" src="img/social/odnokl.svg" alt="Одноклассники">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <ul class="blog__list">

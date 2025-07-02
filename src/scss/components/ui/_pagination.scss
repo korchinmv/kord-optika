@@ -17,19 +17,7 @@
       border-color ease 0.3s,
       color ease 0.3s;
 
-    &:first-child,
-    &:last-child {
-      width: 73px;
 
-      @media screen and (width <=990px) {
-        width: 50px;
-
-        svg {
-          width: 15px;
-          height: 15px;
-        }
-      }
-    }
 
     &:hover {
       color: var(--white-color);
@@ -39,7 +27,7 @@
       .pagination__arrows {
         svg {
           path {
-            stroke: var(--accent-color);
+            stroke: var(--white-color);
           }
         }
       }
@@ -59,6 +47,11 @@
       &:hover {
         color: var(--blue-dark-color);
       }
+    }
+
+    &--prev,
+    &--next {
+      border-color: var(--blue-color);
     }
 
     &--disabled {
@@ -110,9 +103,11 @@
   }
 
   &__arrows {
+    border-color: var(--blue-color);
+
     svg {
       path {
-        stroke: var(--black-color);
+        stroke: var(--blue-color);
       }
     }
   }
