@@ -55,9 +55,6 @@
 
       }
     }
-
-
-
   }
 
   &__pagination {
@@ -151,5 +148,43 @@
     }
   }
 
+  &__author-block {
+    margin-bottom: 40px;
+  }
 
+  &__tabs-panel {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    height: 0;
+    overflow: hidden;
+
+    &--active {
+      opacity: 1;
+      transform: translateY(0);
+      height: auto;
+      overflow: visible;
+    }
+  }
+
+  .text-block {
+    margin-bottom: 32px;
+  }
+
+  &__list-imgs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 32px;
+
+    @media screen and (width <=576px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  }
+
+
+  &__list-img {
+    width: 100%;
+  }
 }
