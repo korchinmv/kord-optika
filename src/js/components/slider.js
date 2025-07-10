@@ -21,3 +21,26 @@ const serviceSwiper = new Swiper(".about__slider", {
     },
   },
 });
+
+const blogArticleSwiper = new Swiper(".blog__slider", {
+  slidesPerView: 1.1,
+  spaceBetween: 20,
+  pagination: {
+    el: ".blog__slider-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".blog__slider-controls-next",
+    prevEl: ".blog__slider-controls-prev",
+  },
+  breakpoints: {
+    990: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+  },
+});

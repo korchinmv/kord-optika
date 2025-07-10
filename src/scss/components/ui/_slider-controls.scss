@@ -1,0 +1,52 @@
+.slider-controls {
+
+  &__prev,
+  &__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.15);
+    background: var(--white-color);
+
+    &:hover {
+      svg {
+        path {
+          stroke: var(--blue-color);
+          transition: all ease 0.3s;
+        }
+      }
+    }
+  }
+
+  &__prev {
+    transform: rotate(180deg);
+  }
+
+  svg {
+    path {
+      transition: all ease 0.3s;
+    }
+  }
+}
+
+.swiper-button-disabled {
+  background-color: #d6d6d6;
+  cursor: default;
+
+  &:hover {
+    svg {
+      path {
+        stroke: var(--grey-color);
+      }
+    }
+  }
+
+  svg {
+    path {
+      stroke: var(--grey-color);
+    }
+  }
+}
