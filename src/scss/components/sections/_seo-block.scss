@@ -51,4 +51,10 @@
       opacity: 1;
     }
   }
+
+  &__text-block-text {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
 }
